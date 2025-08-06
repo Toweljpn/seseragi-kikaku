@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>せせらぎ企画室</title>
+    <style>
+        :root {
+            --bg-color: #fdfdfa; /* 暖かみのあるオフホワイト */
+            --text-color: #3d405b; /* 落ち着いたチャコールグレー */
+            --main-color: #81b29a; /* ヘッダーの青緑系 */
+            --accent-color: #e07a5f; /* アクセントのテラコッタ */
+            --font-serif: "Noto Serif JP", serif;
+            --font-sans: "Noto Sans JP", sans-serif;
+        }
+
+        body {
+            margin: 0;
+            font-family: var(--font-sans);
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            font-size: 16px;
+        }
+
+       .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* --- ヘッダー --- */
+       .hero {
+            text-align: center;
+            padding: 40px 0;
+        }
+       .hero img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+       .hero h1 {
+            font-family: var(--font-serif);
+            font-size: 2.5rem;
+            color: var(--main-color);
+            margin: 0;
+            font-weight: 600;
+        }
+       .hero p {
+            font-size: 1.1rem;
+            color: #6d6875;
+        }
+
+        /* --- セクション共通 --- */
+       .section {
+            padding: 60px 0;
+            border-top: 1px solid #e0e0e0;
+        }
+       .section-title {
+            font-family: var(--font-serif);
+            font-size: 1.8rem;
+            color: var(--main-color);
+            text-align: center;
+            margin-bottom: 40px;
+            font-weight: 500;
+        }
+
+        /* --- About --- */
+       .about-content {
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* --- Profile --- */
+       .profile-content {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+       .profile-image {
+            flex-shrink: 0;
+        }
+       .profile-image img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+       .profile-text h3 {
+            margin-top: 0;
+            font-family: var(--font-serif);
+            font-weight: 600;
+        }
+
+        /* --- Tool --- */
+       .tool-section {
+            background-color: #f4f1ea;
+        }
+       .tool-content {
+            text-align: center;
+        }
+       .tool-description {
+            max-width: 600px;
+            margin: 0 auto 30px auto;
+        }
+       .tool-button {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+       .tool-button:hover {
+            background-color: #d36a4f;
+        }
+
+        /* --- Contact --- */
+       .contact-content {
+            text-align: center;
+        }
+       .contact-content p {
+            margin-bottom: 30px;
+        }
+       .social-link {
+            display: inline-block;
+            background-color: var(--text-color);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+       .social-link:hover {
+            background-color: #2c2e43;
+        }
+
+        /* --- フッター --- */
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+
+        /* --- レスポンシブ対応 --- */
+        @media (max-width: 768px) {
+           .profile-content {
+                flex-direction: column;
+                text-align: center;
+            }
+           .hero h1 {
+                font-size: 2rem;
+            }
+           .section-title {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="hero container">
+        <img src="せせらぎ企画室(notitle).png" alt="せせらぎ企画室のイメージイラスト">
+        <h1>せせらぎ企画室</h1>
+        <p>日本の暮らしに、清らかな視点を。</p>
+    </div>
+
+    <div class="section container">
+        <h2 class="section-title">せせらぎ企画室について</h2>
+        <div class="about-content">
+            <p>
+                季節の移ろいや、暮らしの中に息づく手仕事の美しさ。<br>
+                その源流をそっと訪ね、清らかな小川の流れのように、<br>
+                物事の本質を言葉と写真で丁寧にお届けします。<br>
+                日々の暮らしに、ささやかで美しい発見と、<br>
+                穏やかな時間が流れますように。
+            </p>
+        </div>
+    </div>
+
+    <div class="section container">
+        <h2 class="section-title">案内人</h2>
+        <div class="profile-content">
+            <div class="profile-image">
+                <img src="icon_1_400x400.jpg" alt="きたむらのイメージイラスト">
+            </div>
+            <div class="profile-text">
+                <h3>きたむら</h3>
+                <p>
+                    節句人形アドバイザーとして15年以上、お客様の大切な想いに寄り添ってまいりました。前職は医療系のシステムエンジニア。一見遠い道のりのようですが、物事の構造を見つめ、本質を探求するという点では、どこか繋がっていると感じています。職人の手仕事と、季節の言葉。その誠実な美しさを、私なりの視点でお伝えできれば幸いです。
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section tool-section">
+        <div class="container">
+            <h2 class="section-title">色彩調和システム</h2>
+            <div class="tool-content">
+                <p class="tool-description">
+                    「素敵だと思ったのに、お部屋に馴染まない…」<br>
+                    そんなお悩みを解決するWEBツールを開発しました。<br>
+                    お雛様とお部屋の写真をアップロードするだけで、<br>
+                    色彩の調和を論理的に分析し、具体的な飾り方をご提案します。
+                </p>
+                <a href="https://toweljpn.github.io/color-palette/" class="tool-button">ツールを試してみる</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="section container">
+        <h2 class="section-title">ご連絡・最新情報</h2>
+        <div class="contact-content">
+            <p>
+                日々の活動や、季節のささやかな発見はX（旧Twitter）で発信しております。<br>
+                お人形に関するご相談や、企画室へのお問い合わせは、お気軽にDMまでお寄せください。
+            </p>
+            <a href="https://twitter.com/seseragi_kikaku" class="social-link" target="_blank">Xアカウントをフォローする</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 せせらぎ企画室</p>
+        </div>
+    </footer>
+
+</body>
+</html>
